@@ -19,8 +19,8 @@ public class SQL {
         String sql = "CREATE TABLE IF NOT EXISTS Client (\n"
                 + "	id integer PRIMARY KEY,\n"
                 + "	name text NOT NULL,\n"
-                + "	surname text\n"
-                + "	phone real\n"
+                + "	surname text,\n"
+                + "	phone text\n"
                 + ");";
         try  {
             Connection conn = this.connect();
